@@ -13,7 +13,7 @@ int main(void)
     scanf("%f", &factors[i]);
     printf("Number of tests for subject%i ", i+1);
     scanf("%f", &numOfTests);
-    for(int j = 0; j < sizeof(int) && j < numOfTests; j++)
+    for(int j = 0; j < sizeof(float) && j < numOfTests; j++)
     {
       printf("Subject%i -> Test%i ", i+1, j+1);
       scanf("%f", &data[i][j]);
@@ -24,13 +24,13 @@ int main(void)
   {
     sumOfFactors += factors[k];
   }
-  printf("result: %.2f\n"/*print 2 digits past decimal point*/, (float)multiplied / sumOfFactors);
+  printf("result: %.2f\n"/*print 2 digits past decimal point*/, multiplied / sumOfFactors);
   return 0;
 }
 
 int arraySize(void)//calculates size of data[][] only
 {
   int size;
-  size = (sizeof(data) / sizeof(int)) / sizeof(int);
+  size = (sizeof(data) / sizeof(float)) / sizeof(float);
   return size;
 }
