@@ -21,16 +21,12 @@ int main(void)
     multiplied += ((data[i][0] + data[i][1] + data[i][2] + data[i][3]) / numOfTests) * factors[i];
   }
   for(int k = 0; k < arraySize(); k++)
-  {
     sumOfFactors += factors[k];
-  }
   printf("result: %.2f\n"/*print 2 digits past decimal point*/, multiplied / sumOfFactors);
   return 0;
 }
 
 int arraySize(void)//calculates size of data[][] only
 {
-  int size;
-  size = (sizeof(data) / sizeof(float)) / sizeof(float);
-  return size;
+  return ((sizeof(data) / sizeof(float)) / sizeof(float));
 }
