@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int arraySize(void);
-
-float data[12][4], factors[12/*data[][] size*/], numOfTests, multiplied = 0, numOfSubjects, sumOfFactors = 0;
+//can't not hardcode 14 in the line below cuz compiler throws error
+float data[14][4], factors[14/*data[][] size*/], numOfTests, multiplied = 0, numOfSubjects, sumOfFactors = 0;
 int main(void)
 {
   printf("Number of subjects: ");
