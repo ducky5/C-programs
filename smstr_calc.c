@@ -11,11 +11,11 @@ int main(void)
   {
     printf("coefficient of subject%i: ", i+1);//+1 for user-friendliness
     scanf("%f", &factors[i]);
-    printf("Number of tests for subject%i ", i+1);
+    printf("Number of tests for subject%i: ", i+1);
     scanf("%f", &numOfTests);
     for(int j = 0; j < sizeof(float) && j < numOfTests; j++)
     {
-      printf("Subject%i -> Test%i ", i+1, j+1);
+      printf("Subject%i -> Test%i: ", i+1, j+1);
       scanf("%f", &data[i][j]);
     }
     multiplied += ((data[i][0] + data[i][1] + data[i][2] + data[i][3]) / numOfTests) * factors[i];
